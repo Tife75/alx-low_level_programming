@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/*
- * main - The program starts from here
- * @sizeof: passing the sizeof datatypes to %lu
+/**
+ * main- The main fuction where the program starts
+ *
+ * Return: 0 if program runs without error
  */
 int main(void)
 {
