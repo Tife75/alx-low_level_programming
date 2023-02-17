@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 /**
-  * main- This is where my program start
+  *main- This is start of my program
   *
-  * Return: 0 if program runs without error
+  *Return: 0 if program runs without error
   */
 int main(void)
 {
-	char c;
 	int i;
-	long int li;
-	long long int lli;
+	long int l;
+	long long int ll;
 	float f;
+	char c;
 
-	printf("Size of a char: %d byte(s)\n", sizeof(c));
-	printf("Size of an int: %d byte(s)\n", sizeof(i));
-	printf("Size of a long int: %d byte(s)\n", sizeof(li));
-	printf("Size of a long long int: %d bytes(s)\n", sizeof(lli));
-	printf("Size of a float: %d byte(s)\n", sizeof(f));
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(l));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(ll));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 	return (0);
 }
