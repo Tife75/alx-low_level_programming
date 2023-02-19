@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <unistd.h>
 
-char main[]("and that piece of art is useful\" - Dora Korpar, 2015-10-19")
+int main(void)
 {
-	return (main);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", 60);
+	return (1);
 }
