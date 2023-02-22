@@ -3,7 +3,7 @@
 /**
  * _abs - this program compute the absolute value of a number
  * @n: n is an integer
- * 
+ *
  * Return: 0 if no error
  */
 
