@@ -3,27 +3,27 @@
 
 /**
  * main - program that multiplies two numbers
- * @argc: argument counter of index in argv
- * @argv: argument vector of main
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
- * Return: 0 if no error
+ * Return: If the program receives two arguments - 0.
+ *         If the program does not receive two arguments - 1.
  */
-
 int main(int argc, char *argv[])
 {
-	int i,  mul = 1;
+	int num1, num2, mul;
 
-	if (argc == 3)
+	if (argc != 3)
 	{
-		for (i = 1; i < 3; i++)
-		mul *= atoi(argv[i]);
+		printf("Error\n");
+		return (1);
 	}
-	else
-	{
-	printf("Error\n");
-	}
+
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	mul = num1 * num2;
 
 	printf("%d\n", mul);
 
-	return (1);
+	return (0);
 }
